@@ -29,3 +29,247 @@ a {
 body {
     font-family: "IRANSansX-Medium";
 }
+
+.nexal_header {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    z-index: 1;
+}
+
+.head_video {
+    max-width: 100%;
+    min-height: 120vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.head_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.head_sect1 {
+    width: 100%;
+    height: 14vh;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo_web h2,
+.logo_web p {
+    color: #fff;
+}
+
+.head_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.head_navbar_ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.head_navbar_ul li:hover>a.text-dec,
+.sub_page:hover span {
+    color: #22d3ee;
+    text-decoration: underline 1.5px dashed #22d3ee;
+}
+
+.fa-angle-down {
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.head_navbar_ul .show_subpage {
+    position: relative;
+}
+
+.head_navbar_ul li.show_subpage:hover a.sub_page {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub_page {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200%;
+    padding: 8px 5rem 8px 20px;
+    background-color: #000;
+    border: 0.5px solid #9E9E9E;
+    border-radius: 6px;
+}
+
+.sub_page span {
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ul_item_header i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.ul_item_header a {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    font-size: 18px;
+}
+
+.head_navbar_ul a:active {
+    color: #22d3ee;
+}
+
+.login_btn a,
+.signup_btn a {
+    padding: 1rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.head_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.head_btns button {
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.head_content {
+    max-width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 10rem;
+}
+
+.head_content h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 600;
+}
+
+.head_content p {
+    text-align: center;
+    max-width: 80%;
+    font-size: 16px;
+    color: #ceced5;
+}
+
+.head_sect2_btns button {
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.head_sect2_btns button a {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.signup_btn,
+.Jointoday_btn {
+    background-image: linear-gradient(135deg, #314edf 0%, #22eaee 100%);
+    margin-left: 1rem;
+}
+
+.hover_btn {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover_btn:hover::before {
+    animation: learnmor_btn 0.4s linear;
+}
+
+.hover_btn::before {
+    content: "";
+    position: absolute;
+    border-radius: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(6, 147, 227, 0.32);
+    cursor: pointer;
+}
+
+.hover_btn_F::before {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.learnmor_btn,
+.login_btn {
+    background-color: rgba(6, 147, 227, 0.25);
+}
+
+.learnmor_btn a,
+.login_btn a {
+    color: #22d3ee;
+}
+
+.Jointoday_btn a,
+.signup_btn a {
+    color: #fff;
+}
+
+@keyframes learnmor_btn {
+    0% {
+        width: 0%;
+        height: 40%;
+        opacity: 0;
+    }
+
+    50% {
+        width: 50%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        border-radius: 10px;
+    }
+}
