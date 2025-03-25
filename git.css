@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "IRANSansX-Medium";
+    src: url(./fonts/IRANSansX-Medium.woff) format(woff);
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: "IRANSansX-Medium";
+}
